@@ -10,9 +10,9 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+   <Router basename="/retrovis_industry">
       <Routes>
-        <Route path="/retrovis_industry" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="services" element={<Services />} />
